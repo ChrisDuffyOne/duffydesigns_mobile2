@@ -21,4 +21,15 @@ $(document).ready( function() {
           return false;
     });
 
+	// Screen Size Alert Check
+
+    droidScreenSize = $(window).width();
+	if($(window).width() >= 480) {
+            // if larger or equal to 480
+            alert("Window is larger than 480, the size is " + $(window).width());
+        } else {
+            // if smaller
+            alert("Window is smaller than 480, the size is " + $(window).width());
+    };
+
 });
