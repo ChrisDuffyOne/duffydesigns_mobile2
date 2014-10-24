@@ -220,8 +220,33 @@ table {
 	margin-top: 0;
 }
 
-/* /////// 720 WEBSITE /////// */
-@media only screen and (min-width: 720px) {
+/* /////// 980 MOBILE WEBSITE /////// */
+@media only screen and (max-width: 980px) {
+	.navIcon{
+		min-width: 200px;
+		margin-bottom: 10px;
+		margin-left: 35px;
+	}
+
+	.portWebContentImage{
+		min-width: 80%;
+	}
+
+	.projectName{
+		font-size: 2.65em;
+	}
+
+	.projectExp{
+		font-size: 1.75em;
+	}
+
+	.enterSite{
+		min-width: 35%;
+	}
+}
+
+/* /////// 1000 WEBSITE /////// */
+@media only screen and (min-width: 1000px) {
 
 	.mouseNav{
 		display: initial;
@@ -264,8 +289,8 @@ table {
  	}	
 }
 
-/* /////// 1080 WEBSITE /////// */
-@media only screen and (min-width: 1080px) {
+/* /////// 1340 WEBSITE /////// */
+@media only screen and (min-width: 1340px) {
 
 	/* /// Nav Div /// */
 	.mouseNav{
