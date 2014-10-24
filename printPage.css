@@ -139,10 +139,11 @@ table {
 }
 
 .portContentImage{
+	display: block;
 	margin-top: 2em;
  	max-width: 350px;
- 	margin-left:5%;
- 	margin-right:5%;
+	margin-left:auto;
+ 	margin-right:auto;
 }
 
 .portWebContentImage{
@@ -238,6 +239,10 @@ table {
 
 	.projectExp{
 		font-size: 1.75em;
+	}
+
+	.portContentImage{
+		min-width: 80%;
 	}
 
 	.enterSite{
