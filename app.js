@@ -1,15 +1,22 @@
 $(document).ready( function() {
 	console.log("javascript on");
 
+	//Mouse House Mobile Display
+
+	if($(window).width() <= 1000) {
+         $('#mouseHole').attr('src','images/mouseHoleMouse.png');   
+    }
+
 	//Mouse Appearance & Disappearance
 
-	$(".intro").on("mouseenter", "#mouseHole", function () {
-		$('#mouseHole').attr('src','images/mouseHoleMouse.png');
-	});
-
-	$(".intro").on("mouseleave", "#mouseHole", function () {
-		$('#mouseHole').attr('src','images/mouseHole.png');
-	});
+	if($(window).width() > 1000) {
+		$(".intro").on("mouseenter", "#mouseHole", function () {
+			$('#mouseHole').attr('src','images/mouseHoleMouse.png');
+		});
+		$(".intro").on("mouseleave", "#mouseHole", function () {
+			$('#mouseHole').attr('src','images/mouseHole.png');
+		});
+	}
 
 	//Nav Bar Scrolling
 	
@@ -22,14 +29,15 @@ $(document).ready( function() {
     });
 
 	// Screen Size Alert Check
-
-    droidScreenSize = $(window).width();
-	if($(window).width() >= 480) {
-            // if larger or equal to 480
-            alert("Window is larger than 480, the size is " + $(window).width());
-        } else {
-            // if smaller
-            alert("Window is smaller than 480, the size is " + $(window).width());
-    };
-
+	// For Mobile Debugging
+	/*
+	    droidScreenSize = $(window).width();
+		if($(window).width() >= 480) {
+	            // if larger or equal to 480
+	            alert("Window is larger than 480, the size is " + $(window).width());
+	        } else {
+	            // if smaller
+	            alert("Window is smaller than 480, the size is " + $(window).width());
+	    };
+	*/
 });

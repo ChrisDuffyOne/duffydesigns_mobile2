@@ -69,21 +69,19 @@ table {
 }
 
 .mainTitle{
-	max-width: 300px;
-	max-height: 450px;
+	max-width: 600px;
 	margin-top: 1.5em;
 }
 
 .mouseHole{
-	max-width: 100px;
-	max-height: 125px;
+	max-width: 200px;
 	margin-top: 3em;
 	margin-bottom: -5px;
 }
 
 .blueBox{
 	background-color: #37489E;
-	min-height: 20px;
+	min-height: 120px;
 	margin-top: 0;
 }
 
@@ -102,19 +100,17 @@ table {
 .portfolioHeader{
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 250px;
+	min-width: 450px;
 	margin-bottom: 30px;
 }
 
 .contentItem{
 	display: inline-block;
-	max-width: 400px;
 	text-align: left;
 }
 
 .contentImage{
-	max-width: 300px;
-	max-height: 450px;
+	max-width: 100%;
 	margin-top: 1.5em;
 }
 
@@ -130,7 +126,7 @@ table {
 }
 
 /* /// Portfolio Detail /// */
-
+/*This is an discontinued feature*/
 .portfolioDetail{
 	display: none;
 	position: fixed;
@@ -138,10 +134,8 @@ table {
 	width: 80%;
 	margin-left:auto;
 	margin-right:auto;
-	
 	background-color: red;
 	min-height: 800px;
-
 }
 
 /* /// About/Contact Div /// */
@@ -158,8 +152,6 @@ table {
 }
 
 .profilePic{
-	max-width: 300px;
-	max-height: 450px;
 	margin-bottom: 2em;
 }
 
@@ -176,7 +168,6 @@ table {
 }
 
 .squeakMouse{
-	max-height: 200px;
 	margin-left: 6em;
 	margin-top: 2em;
 	margin-bottom: -15px;
@@ -188,9 +179,45 @@ table {
 	margin-top: 0;
 }
 
-/* /////// 720 WEBSITE /////// */
-@media only screen and (min-width: 1000px) {
+/* /////// 980 MOBILE WEBSITE /////// */
+@media only screen and (max-width: 980px) {
 
+	/* /// Portfolio Div /// */
+	.contentItem{
+		width: 90%;
+	}
+
+	.contentImage{
+		margin-top: 10.5em;
+	}
+
+	.projectName{
+		font-size: 3em;
+	}
+
+	.projectType{
+		font-size: 3em;
+	}
+
+	/* /// About/Contact Div /// */
+	
+	.profilePic{
+		min-width: 450px;
+	}
+
+	.info{
+		font-size: 1.75em;	
+	}
+
+	.squeakMouse{
+		max-height: 400px;
+	}
+}
+
+/* /////// 1000 WEBSITE /////// */
+@media only screen and (min-width: 1000px) {
+	
+	/* /// Nav Div /// */
 	.mouseNav{
 		display: initial;
 		background-color: #37489E;
@@ -213,20 +240,55 @@ table {
 	  	bottom: 0px;
 	}
 
+	/* /// Intro Div /// */
 	.mainTitle{
+		/*HERE*/
+		max-width: 300px;
+		max-height: 450px;
+
 		margin-top: 4.5em;
+	}
+
+	.mouseHole{
+		max-width: 100px;
+		max-height: 125px;
 	}
 
 	.blueBox{
 		min-height: 150px;
 	}
 
+	/* /// Portfolio Div /// */
 	.portfolioHeader{
 		display: none;
 	}
+
+	.contentItem{
+		/* HERE */
+		max-width: 400px;
+	}
+
+	.contentImage{
+		/* HERE */
+		max-width: 300px;
+		max-height: 450px;
+	}
+
+	/* /// About/Contact Div /// */
+
+	.profilePic{
+		/* HERE */
+		max-width: 300px;
+		max-height: 450px;
+	}
+
+	.squeakMouse{
+		/* HERE */
+		max-height: 200px;
+	}
 }
 
-/* /////// 1080 WEBSITE /////// */
+/* /////// 1340 WEBSITE /////// */
 @media only screen and (min-width: 1340px) {
 
 	/* /// Nav Div /// */
