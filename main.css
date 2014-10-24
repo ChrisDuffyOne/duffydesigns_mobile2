@@ -189,7 +189,7 @@ table {
 }
 
 /* /////// 720 WEBSITE /////// */
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 1000px) {
 
 	.mouseNav{
 		display: initial;
@@ -227,7 +227,7 @@ table {
 }
 
 /* /////// 1080 WEBSITE /////// */
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1340px) {
 
 	/* /// Nav Div /// */
 	.mouseNav{
