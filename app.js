@@ -40,4 +40,8 @@ $(document).ready( function() {
 	            alert("Window is smaller than 480, the size is " + $(window).width());
 	    };
 	*/
+
+	// Version Alert
+	droidScreenSize = $(window).width();
+	alert("Version 2: Created Oct 25 3:32PM. Viewing window is " +droidScreenSize+ " pixels wide");
 });
