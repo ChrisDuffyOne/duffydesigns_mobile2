@@ -28,20 +28,11 @@ $(document).ready( function() {
           return false;
     });
 
-	// Screen Size Alert Check
+	// Screen Size & Version Alert Check
 	// For Mobile Debugging
 	/*
-	    droidScreenSize = $(window).width();
-		if($(window).width() >= 480) {
-	            // if larger or equal to 480
-	            alert("Window is larger than 480, the size is " + $(window).width());
-	        } else {
-	            // if smaller
-	            alert("Window is smaller than 480, the size is " + $(window).width());
-	    };
+	  droidScreenSize = $(window).width();
+		alert("Version 2: Created Oct 25 3:32PM. Viewing window is " +droidScreenSize+ " pixels wide");
 	*/
-
-	// Version Alert
-	droidScreenSize = $(window).width();
-	alert("Version 2: Created Oct 25 3:32PM. Viewing window is " +droidScreenSize+ " pixels wide");
+	
 });
